@@ -1,0 +1,20 @@
+# License and Acknowledgement
+The XFusion project is licensed under the Argonne/DOE BSD 3‑Clause–style license included in [`LICENSE`](https://github.com/xray-imaging/XFusion/blob/main/LICENSE.txt).
+* Model [training](/xfusion/train) and [inference](/xfusion/inference) codes are modified from the repositories [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR). The license is [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+    * EDVR-STF: the codes are modified from the repository [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR). The license is [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+    * The EDVR-STF model optionally uses a nested transformer adapted from the [STTN](https://github.com/researchmm/STTN) repository, which uses the [MIT](/LICENSE/LICENSE_STTN.txt) license.
+* Utilities
+    * The parallelization, file IO, [optical flow](/xfusion/train/basicsr/utils/flow_util.py) utilities are originally from the [mmcv repository](https://github.com/open-mmlab/mmcv) and modified in the [BasicSR repository](https://github.com/XPixelGroup/BasicSR). The licenses are [Apache 2.0](/LICENSE/LICENSE_mmcv.txt) and [Apache 2.0](/LICENSE/LICENSE_basicsr.txt), respectively.
+    * The [registry](/xfusion/train/basicsr/utils/registry.py) utility is originally from the [fvcore](https://github.com/facebookresearch/fvcore) repository and modified from the repository [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR). The licenses are [Apache 2.0](/LICENSE/LICENSE_fvcore.txt) and [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+    * Other utilities for EDVR-STF are modified from the [BasicSR repository](https://github.com/XPixelGroup/BasicSR). The license is [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+    * The [logging](/xfusion/inference/dataset/logger.py) utility is from the [BasicSR repository](https://github.com/XPixelGroup/BasicSR). The license is [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+* Dataset
+    * The xray dataset APIs for the EDVR-STF model are modified from the [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR) repository. The license is [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+
+* The deformable convolutions
+    * Some cuda head files are originally from the [deformable convnets](https://github.com/msracver/Deformable-ConvNets) repository and modified in the [deformable convolution v2-PyTorch](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) and [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR) repositories. The licenses of the [deformable convnets](https://github.com/msracver/Deformable-ConvNets) are [caffe](/LICENSE/LICENSE_caffe.txt) and [MIT](/LICENSE/LICENSE_deformable_convnets.txt).
+    * Some codes are originally from the [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR) repository, or originally from the [deformable convolution v2-PyTorch](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) repository and modified in the [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR) repository.
+
+    * The licenses of the [deformable convolution v2-PyTorch](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) and [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR) repositories are [Apache 2.0](/LICENSE/LICENSE_deformable_convolution_v2_pytorch.txt) and [Apache 2.0](/LICENSE/LICENSE_basicsr.txt), respectively.
+* The yaml configuration files for training and inference are modified from the repository [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR). The license is [Apache 2.0](/LICENSE/LICENSE_basicsr.txt).
+* The FID metric is from the repository [BasicSR toolbox](https://github.com/XPixelGroup/BasicSR) modified from [pytorch-fid](https://github.com/mseitzer/pytorch-fid) and [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch). The licenses are [Apache 2.0](/LICENSE/LICENSE_basicsr.txt), [Apache 2.0](/LICENSE/LICENSE_pytorch_fid.txt), and [MIT](/LICENSE/LICENSE_stylegan2-pytorch.txt), respectively.
